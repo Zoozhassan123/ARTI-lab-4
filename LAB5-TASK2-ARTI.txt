@@ -1,0 +1,27 @@
+18 ?- female(X).
+X = sara ;
+X = nora.
+
+18 ?- male(X).
+X = ali ;
+X = ahmad ;
+X = muhammad ;
+X = faisal ;
+X = hassan ;
+X = khan.
+
+19 ?- parent(X, Y), parent(Y, faisal).
+X = ali,
+Y = muhammad ;
+false.
+
+20 ?- parent(ahmad, X), female(X).
+X = sara ;
+X = nora ;
+false.
+
+21 ?- parent(X, ahmad), parent(X, muhammad).
+X = ali.
+
+22 ?- male(khan), female(nora), parent(X, khan), parent(X, nora).
+X = ahmad.
