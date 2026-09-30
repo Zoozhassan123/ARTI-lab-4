@@ -2,18 +2,12 @@
 X = sara ;
 X = nora.
 
-18 ?- male(X).
-X = ali ;
-X = ahmad ;
-X = muhammad ;
-X = faisal ;
-X = hassan ;
-X = khan.
+18 ?- male(_).
+true.
 
 19 ?- parent(X, Y), parent(Y, faisal).
 X = ali,
-Y = muhammad ;
-false.
+Y = muhammad.
 
 20 ?- parent(ahmad, X), female(X).
 X = sara ;
